@@ -1,726 +1,1134 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Smarika Pokhrel | Academic Researcher & Biotechnology Specialist</title>
-  <meta name="description" content="Official Academic Portfolio of Smarika Pokhrel (smarikapokhrel.com.np) - Biotechnology Researcher, Environmental Science & Bioremediation Specialist, Kathmandu University.">
-  <meta name="keywords" content="Smarika Pokhrel, Biotechnology Researcher Nepal, Kathmandu University, Bioremediation, Molecular Biology, smarikapokhrel.com.np">
-  <meta name="author" content="Smarika Pokhrel">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Fonts: Outfit, Inter, Fira Code -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- FontAwesome 6 Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  
-  <!-- Custom Stylesheet -->
-  <link rel="stylesheet" href="styles.css">
+<title>Smarika Pokhrel | Biotechnology Researcher</title>
 
-  <!-- Favicons -->
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    background: #f7f5f0;
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 25px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+.nav-links a {
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #d9b78c;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 620px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(25, 30, 38, 0.70),
+            rgba(25, 30, 38, 0.78)
+        ),
+        url("images/lab-background.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    margin-top: 50px;
+}
+
+.hero-symbol {
+    font-size: 50px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 7vw, 80px);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 16px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.hero-line {
+    width: 70px;
+    height: 2px;
+    background: #d9b78c;
+    margin: 30px auto;
+}
+
+/* =========================
+   INTRO SECTION
+========================= */
+
+.intro {
+    padding: 90px 0;
+    background: #eeeeeb;
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    gap: 70px;
+}
+
+.profile-photo {
+    width: 100%;
+    max-width: 380px;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+.intro h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #30333a;
+}
+
+.intro h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #8b7355;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 28px;
+    border: 1px solid #555;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #333;
+    color: white;
+}
+
+/* =========================
+   RESEARCH
+========================= */
+
+.research {
+    padding: 100px 0;
+    background: #f8f7f3;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.section-title h2 {
+    font-size: 42px;
+    font-weight: 500;
+}
+
+.section-title p {
+    margin-top: 10px;
+    color: #888;
+    font-size: 14px;
+}
+
+.section-line {
+    width: 50px;
+    height: 2px;
+    background: #b28b62;
+    margin: 20px auto;
+}
+
+.research-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.research-card {
+    background: white;
+    padding: 40px 30px;
+    text-align: center;
+    border: 1px solid #e5e2dc;
+    transition: 0.3s;
+}
+
+.research-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.research-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.research-card h3 {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.research-card p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+.experience {
+    padding: 100px 0;
+    background: #e9e4db;
+}
+
+.timeline {
+    max-width: 850px;
+    margin: auto;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 40px;
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+
+.timeline-date {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #8a6d4b;
+}
+
+.timeline-content h3 {
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+
+.timeline-content h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   PUBLICATIONS
+========================= */
+
+.publications {
+    padding: 100px 0;
+    background: #f8f7f3;
+}
+
+.publication {
+    padding: 30px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.publication-number {
+    color: #a17c56;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.publication h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.publication p {
+    color: #777;
+    font-size: 14px;
+}
+
+.publication a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #8a6847;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery {
+    padding: 100px 0;
+    background: #e8e4dd;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.gallery-item {
+    height: 270px;
+    overflow: hidden;
+    position: relative;
+    background: #ccc;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px 20px 20px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.75));
+    color: white;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-overlay h3 {
+    font-size: 19px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    padding: 100px 0;
+    background: #292c32;
+    color: white;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 42px;
+    font-weight: 500;
+}
+
+.contact p {
+    max-width: 600px;
+    margin: 20px auto;
+    color: #c5c5c5;
+}
+
+.contact-info {
+    margin-top: 35px;
+}
+
+.contact-info a {
+    display: block;
+    margin: 10px;
+    color: #d9b78c;
+}
+
+.socials {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.socials a {
+    width: 42px;
+    height: 42px;
+    border: 1px solid #777;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    background: #d9b78c;
+    color: #222;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #202228;
+    color: #999;
+    text-align: center;
+    padding: 25px;
+    font-size: 12px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    nav {
+        padding: 20px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        min-height: 550px;
+    }
+
+    .intro-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .profile-photo {
+        height: 400px;
+    }
+
+    .research-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero p {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+}
+
+</style>
 </head>
+
+
 <body>
 
-  <!-- Dynamic Ambient Background Mesh -->
-  <div class="ambient-background" aria-hidden="true">
-    <div class="ambient-orb ambient-orb-1"></div>
-    <div class="ambient-orb ambient-orb-2"></div>
-    <div class="ambient-orb ambient-orb-3"></div>
-  </div>
-  <div class="grid-overlay" aria-hidden="true"></div>
+<!-- =========================
+     NAVIGATION
+========================= -->
 
-  <!-- Main Container -->
-  <div class="container" style="position: relative; z-index: 2;">
+<nav>
 
-    <!-- Site Header -->
-    <header class="site-header">
-      <div class="header-glass-bar">
-        <a href="#" class="brand-identity">
-          <div class="brand-logo-icon">SP</div>
-          <div class="brand-text-group">
-            <span class="brand-name">Smarika Pokhrel</span>
-            <span class="brand-tagline">Biotechnology & Environmental Researcher</span>
-          </div>
-        </a>
+    <div class="logo">
+        SP
+    </div>
 
-        <!-- Global Search Input -->
-        <div class="header-search">
-          <div class="search-input-wrapper">
-            <input type="text" id="global-search" class="search-input" placeholder="Search publications, grants, skills..." aria-label="Search">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <span class="search-badge" id="search-count">0 matches</span>
-          </div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+</nav>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="hero-symbol">
+            ⚛
         </div>
 
-        <!-- Header Actions -->
-        <div class="header-actions">
-          <button class="btn-icon" id="theme-toggle" title="Toggle Light/Dark Theme">
-            <i class="fa-solid fa-sun"></i>
-          </button>
-          <button class="btn-glass-pill" id="dns-info-btn" title="Office Hours & Academic Profile Guide">
-            <i class="fa-solid fa-building-columns" style="color: var(--accent-cyan);"></i>
-            <span>Office Hours</span>
-          </button>
-          <button class="btn-gradient" id="add-event-nav-btn">
-            <i class="fa-solid fa-plus"></i>
-            <span>Add Paper</span>
-          </button>
-        </div>
-      </div>
+        <h1>Smarika Pokhrel</h1>
 
-      <!-- Navigation Tabs Bar -->
-      <nav class="tabs-navigation-bar">
-        <div class="tabs-glass-wrapper" role="tablist">
-          <button class="nav-tab-btn active" data-tab="overview" role="tab"><i class="fa-solid fa-house"></i> Overview</button>
-          <button class="nav-tab-btn" data-tab="cv" role="tab"><i class="fa-solid fa-file-lines"></i> CV & Academic History</button>
-          <button class="nav-tab-btn" data-tab="portfolio" role="tab"><i class="fa-solid fa-flask"></i> Publications & Papers</button>
-          <button class="nav-tab-btn" data-tab="grants" role="tab"><i class="fa-solid fa-microscope"></i> Grants & Projects</button>
-          <button class="nav-tab-btn" data-tab="events" role="tab"><i class="fa-solid fa-award"></i> Conferences & Honors</button>
-          <button class="nav-tab-btn" data-tab="gallery" role="tab"><i class="fa-solid fa-images"></i> Field Notes & Gallery</button>
-          <button class="nav-tab-btn" data-tab="contact" role="tab"><i class="fa-solid fa-paper-plane"></i> Contact</button>
-        </div>
-      </nav>
-    </header>
+        <div class="hero-line"></div>
 
-    <!-- Main Wrapper -->
-    <main class="main-wrapper">
-      
-      <!-- HERO PROFILE SECTION -->
-      <section class="hero-profile-card tilt-card" id="hero-section">
-        <div class="hero-profile-layout">
-          
-          <!-- Avatar -->
-          <div class="avatar-container">
-            <div class="avatar-ring"></div>
-            <img src="assets/images/avatar.jpg" alt="Smarika Pokhrel Profile Picture" class="avatar-img" id="user-avatar">
-            <div class="status-badge">
-              <span class="status-dot"></span>
-              Open to Academic & Research Fellowships
-            </div>
-          </div>
+        <p>Biotechnology Researcher</p>
 
-          <!-- Info Details -->
-          <div class="profile-info">
-            <div class="profile-header-meta">
-              <h1 class="profile-name">Smarika Pokhrel</h1>
-              <a href="https://smarikapokhrel.com.np" target="_blank" class="domain-pill" title="Verified Domain">
-                <i class="fa-solid fa-shield-halved"></i>
-                <span>smarikapokhrel.com.np</span>
-              </a>
-            </div>
+    </div>
 
-            <div class="profile-title">Academic Researcher & Biotechnology Specialist</div>
+</section>
 
-            <p class="profile-bio">
-              Researcher at <strong>Kathmandu University (KU)</strong> specializing in <strong>Environmental Biotechnology, Microbial Bioremediation, and Sustainable Waste-to-Energy Systems</strong>. Published author in peer-reviewed journals focusing on heavy metal biosorption, microalgal bio-refineries, and molecular diagnostics.
-            </p>
 
-            <div class="meta-badges-row">
-              <div class="meta-chip"><i class="fa-solid fa-location-dot"></i> Dhulikhel / Kathmandu, Nepal</div>
-              <div class="meta-chip"><i class="fa-solid fa-graduation-cap"></i> Kathmandu University (Biotechnology)</div>
-              <div class="meta-chip"><i class="fa-solid fa-vial"></i> Bioremediation & Molecular Biology Lab</div>
-            </div>
+<!-- =========================
+     ABOUT
+========================= -->
 
-            <div class="profile-actions-bar">
-              <button class="btn-gradient" id="download-cv-btn">
-                <i class="fa-solid fa-download"></i> Download Academic CV (PDF)
-              </button>
-              <button class="btn-glass-pill" id="open-contact-btn">
-                <i class="fa-solid fa-envelope"></i> Contact Researcher
-              </button>
-              <a href="https://linkedin.com" target="_blank" class="btn-icon" title="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="mailto:smarikapokhrel3@gmail.com" class="btn-icon" title="Email"><i class="fa-solid fa-envelope"></i></a>
-              <a href="tel:+9779800000000" class="btn-icon" title="Phone"><i class="fa-solid fa-phone"></i></a>
-            </div>
-          </div>
+<section class="intro" id="about">
 
-        </div>
-      </section>
+    <div class="container">
 
-      <!-- STATS COUNTER GRID -->
-      <section class="stats-counter-grid">
-        <div class="stat-glass-card tilt-card">
-          <div class="stat-icon-wrapper cyan"><i class="fa-solid fa-book-journal-whills"></i></div>
-          <div>
-            <div class="stat-number" data-target="3">3+</div>
-            <div class="stat-label">Peer-Reviewed Papers</div>
-          </div>
-        </div>
+        <div class="intro-grid">
 
-        <div class="stat-glass-card tilt-card">
-          <div class="stat-icon-wrapper purple"><i class="fa-solid fa-percent"></i></div>
-          <div>
-            <div class="stat-number" data-target="98.5">98.5%</div>
-            <div class="stat-label">Degradation Efficiency</div>
-          </div>
-        </div>
-
-        <div class="stat-glass-card tilt-card">
-          <div class="stat-icon-wrapper emerald"><i class="fa-solid fa-quote-right"></i></div>
-          <div>
-            <div class="stat-number" data-target="120">120+</div>
-            <div class="stat-label">Academic Citations</div>
-          </div>
-        </div>
-
-        <div class="stat-glass-card tilt-card">
-          <div class="stat-icon-wrapper amber"><i class="fa-solid fa-microscope"></i></div>
-          <div>
-            <div class="stat-number">KU Lab</div>
-            <div class="stat-label">Kathmandu University Fellow</div>
-          </div>
-        </div>
-      </section>
-
-      <!-- TAB 1: OVERVIEW -->
-      <div id="tab-overview" class="tab-panel active">
-        <div class="section-header-banner">
-          <div class="section-title-group">
-            <div class="section-icon-box"><i class="fa-solid fa-compass"></i></div>
             <div>
-              <h2 class="section-title">Research Overview & Academic Interests</h2>
-              <p class="section-subtitle">Pioneering green biotechnology, environmental bio-remediation, and molecular assays</p>
+                <!-- Replace this image -->
+                <img
+                    src="images/profile.jpg"
+                    alt="Smarika Pokhrel"
+                    class="profile-photo"
+                >
             </div>
-          </div>
-        </div>
 
-        <div class="grid-2">
-          <!-- Highlight 1 -->
-          <div class="material-card tilt-card">
-            <div class="card-header-flex">
-              <div>
-                <h3 class="card-title">Microbial Bioremediation & Heavy Metals</h3>
-                <p class="card-subtitle">Isolation of Native Bacterial Strains for Industrial Wastewater Treatment</p>
-              </div>
-              <span class="card-badge">Biotech Journal</span>
-            </div>
-            <p class="card-description">
-              Investigated bio-sorption mechanisms of novel bacterial isolates extracted from industrial effluents in Nepal. Achieved 98.5% reduction in lead and chromium concentrations using batch bio-reactor models.
-            </p>
-            <div class="tech-tags">
-              <span class="tech-chip">Biosorption</span>
-              <span class="tech-chip">Heavy Metals</span>
-              <span class="tech-chip">AAS Analytics</span>
-              <span class="tech-chip">Bacterial Kinetics</span>
-            </div>
-          </div>
 
-          <!-- Highlight 2 -->
-          <div class="material-card tilt-card">
-            <div class="card-header-flex">
-              <div>
-                <h3 class="card-title">Microalgae Bio-refinery & Circular Economy</h3>
-                <p class="card-subtitle">Cultivation of Chlorella vulgaris for Biofuel and Bio-fertilizers</p>
-              </div>
-              <span class="card-badge">Kathmandu University</span>
-            </div>
-            <p class="card-description">
-              Optimized photon flux density and carbon supplementation parameters for microalgal biomass yield, generating high-lipid yields suitable for bio-diesel conversion and nutrient-rich organic soil conditioning.
-            </p>
-            <div class="tech-tags">
-              <span class="tech-chip">Chlorella vulgaris</span>
-              <span class="tech-chip">Lipid Extraction</span>
-              <span class="tech-chip">Bio-diesel</span>
-              <span class="tech-chip">Carbon Capture</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- TAB 2: CV & ACADEMIC HISTORY -->
-      <div id="tab-cv" class="tab-panel">
-        <div class="section-header-banner">
-          <div class="section-title-group">
-            <div class="section-icon-box"><i class="fa-solid fa-file-contract"></i></div>
             <div>
-              <h2 class="section-title">Curriculum Vitae (Academic CV)</h2>
-              <p class="section-subtitle">Education, academic research positions, and laboratory skills</p>
+
+                <h3>About Me</h3>
+
+                <h2>Researching today.<br>
+                Creating tomorrow.</h2>
+
+                <p>
+                    I am Smarika Pokhrel, a Biotechnology researcher
+                    interested in exploring the intersection of biology,
+                    computational science and innovation.
+                </p>
+
+                <p>
+                    My interests include molecular docking,
+                    bioinformatics, natural products, drug discovery
+                    and translational biotechnology.
+                </p>
+
+                <a href="#research" class="button">
+                    Explore My Work
+                </a>
+
             </div>
-          </div>
-          <button class="btn-glass-pill" id="cv-print-btn"><i class="fa-solid fa-print"></i> Print / Save PDF</button>
+
         </div>
 
-        <h3 style="margin: 24px 0 16px 0; font-size: 1.2rem; font-family: var(--font-main);">
-          <i class="fa-solid fa-graduation-cap" style="color: var(--accent-cyan); margin-right: 8px;"></i> Academic Education
-        </h3>
-        
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="material-card tilt-card">
-              <div class="card-header-flex">
-                <div>
-                  <h3 class="card-title">Bachelor of Science / Technology in Biotechnology</h3>
-                  <p class="card-subtitle">Kathmandu University (KU) • Dhulikhel, Nepal</p>
-                </div>
-                <span class="card-badge">2022 – 2026</span>
-              </div>
-              <p class="card-description">
-                • Specialization in Molecular Biology, Recombinant DNA Technology, Microbial Biotechnology, and Environmental Assay Design.<br>
-                • Senior Thesis: Evaluation of bacterial biosorption efficiency for industrial heavy metal remediation in Nepalese watershed basins.<br>
-                • Recipient of Academic Merit Scholarship, Department of Biotechnology.
-              </p>
-              <div class="tech-tags">
-                <span class="tech-chip">Kathmandu University</span>
-                <span class="tech-chip">Biotechnology</span>
-                <span class="tech-chip">Molecular Biology</span>
-              </div>
-            </div>
-          </div>
+    </div>
+
+</section>
+
+
+<!-- =========================
+     RESEARCH INTERESTS
+========================= -->
+
+<section class="research" id="research">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Research Interests</h2>
+
+            <div class="section-line"></div>
+
+            <p>
+                Areas that inspire my scientific curiosity
+            </p>
+
         </div>
 
-        <h3 style="margin: 36px 0 16px 0; font-size: 1.2rem; font-family: var(--font-main);">
-          <i class="fa-solid fa-briefcase" style="color: var(--accent-purple); margin-right: 8px;"></i> Research Positions & Academic Experience
-        </h3>
+
+        <div class="research-grid">
+
+            <div class="research-card">
+
+                <div class="research-icon">🧬</div>
+
+                <h3>Biotechnology</h3>
+
+                <p>
+                    Exploring biological systems and their
+                    applications in health, research and innovation.
+                </p>
+
+            </div>
+
+
+            <div class="research-card">
+
+                <div class="research-icon">🔬</div>
+
+                <h3>Drug Discovery</h3>
+
+                <p>
+                    Interested in natural products, molecular
+                    interactions and computer-aided drug discovery.
+                </p>
+
+            </div>
+
+
+            <div class="research-card">
+
+                <div class="research-icon">💻</div>
+
+                <h3>Bioinformatics</h3>
+
+                <p>
+                    Using computational approaches to understand
+                    biological sequences, structures and interactions.
+                </p>
+
+            </div>
+
+
+            <div class="research-card">
+
+                <div class="research-icon">🌿</div>
+
+                <h3>Natural Products</h3>
+
+                <p>
+                    Investigating bioactive compounds and their
+                    potential applications in health and biotechnology.
+                </p>
+
+            </div>
+
+
+            <div class="research-card">
+
+                <div class="research-icon">🧪</div>
+
+                <h3>In-Silico Research</h3>
+
+                <p>
+                    Molecular docking, protein-ligand interactions,
+                    pharmacokinetics and computational analysis.
+                </p>
+
+            </div>
+
+
+            <div class="research-card">
+
+                <div class="research-icon">✨</div>
+
+                <h3>Innovation</h3>
+
+                <p>
+                    Connecting scientific research with real-world
+                    applications and future biotechnology ventures.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     EXPERIENCE / EDUCATION
+========================= -->
+
+<section class="experience">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>My Journey</h2>
+
+            <div class="section-line"></div>
+
+        </div>
+
 
         <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-dot" style="border-color: var(--accent-purple);"></div>
-            <div class="material-card tilt-card">
-              <div class="card-header-flex">
-                <div>
-                  <h3 class="card-title">Graduate Research Assistant</h3>
-                  <p class="card-subtitle">Environmental Biotechnology Laboratory • Kathmandu University</p>
+
+            <div class="timeline-item">
+
+                <div class="timeline-date">
+                    2021 – 2026
                 </div>
-                <span class="card-badge">2024 – Present</span>
-              </div>
-              <p class="card-description">
-                • Conducted spectrophotometric, HPLC, and Atomic Absorption Spectrometry (AAS) analyses for environmental samples.<br>
-                • Supervised undergraduate laboratory sessions in Molecular Diagnostics and Microbiology Techniques.<br>
-                • Authored research protocols and co-manuscript papers for peer-reviewed academic submission.
-              </p>
-            </div>
-          </div>
-        </div>
 
-        <h3 style="margin: 36px 0 16px 0; font-size: 1.2rem; font-family: var(--font-main);">
-          <i class="fa-solid fa-gears" style="color: var(--accent-emerald); margin-right: 8px;"></i> Laboratory Techniques & Technical Skills
-        </h3>
+                <div class="timeline-content">
 
-        <div class="skills-container">
-          <div class="skill-category-card tilt-card">
-            <h4 class="skill-cat-title"><i class="fa-solid fa-dna" style="color: var(--accent-cyan);"></i> Molecular Diagnostics & Assays</h4>
-            <div class="skill-list">
-              <span class="skill-pill"><i class="fa-solid fa-vial"></i> PCR & qPCR</span>
-              <span class="skill-pill"><i class="fa-solid fa-dna"></i> Gel Electrophoresis</span>
-              <span class="skill-pill"><i class="fa-solid fa-microscope"></i> Bacterial Transformation</span>
-              <span class="skill-pill"><i class="fa-solid fa-filter"></i> DNA/RNA Extraction</span>
-            </div>
-          </div>
+                    <h3>B.Tech. Biotechnology</h3>
 
-          <div class="skill-category-card tilt-card">
-            <h4 class="skill-cat-title"><i class="fa-solid fa-flask" style="color: var(--accent-purple);"></i> Analytical Instrumentation</h4>
-            <div class="skill-list">
-              <span class="skill-pill"><i class="fa-solid fa-chart-area"></i> UV-Vis Spectrophotometry</span>
-              <span class="skill-pill"><i class="fa-solid fa-atom"></i> Atomic Absorption (AAS)</span>
-              <span class="skill-pill"><i class="fa-solid fa-droplet"></i> HPLC Analytics</span>
-              <span class="skill-pill"><i class="fa-solid fa-database"></i> Bioinformatics & BLAST</span>
-            </div>
-          </div>
-        </div>
-      </div>
+                    <h4>
+                        Kathmandu University
+                    </h4>
 
-      <!-- TAB 3: PUBLICATIONS & RESEARCH PAPERS -->
-      <div id="tab-portfolio" class="tab-panel">
-        <div class="section-header-banner">
-          <div class="section-title-group">
-            <div class="section-icon-box"><i class="fa-solid fa-book-journal-whills"></i></div>
-            <div>
-              <h2 class="section-title">Publications & Peer-Reviewed Papers</h2>
-              <p class="section-subtitle">Journal papers, conference proceedings, and academic preprints</p>
-            </div>
-          </div>
+                    <p>
+                        Academic training in biotechnology,
+                        molecular biology, bioinformatics and
+                        bioprocessing.
+                    </p>
 
-          <div class="filter-pills-bar" id="portfolio-filters">
-            <button class="filter-pill-btn active" data-filter="all">All Publications</button>
-            <button class="filter-pill-btn" data-filter="biotech">Biotechnology</button>
-            <button class="filter-pill-btn" data-filter="remediation">Bioremediation</button>
-          </div>
-        </div>
-
-        <div class="grid-2" id="portfolio-grid">
-          <!-- Paper 1 -->
-          <div class="portfolio-card tilt-card" data-category="remediation">
-            <div class="portfolio-img-wrapper">
-              <img src="assets/images/lab_research.jpg" alt="Bioremediation Microalgae Research" class="portfolio-img">
-              <span class="portfolio-overlay-badge">Journal Article (2025)</span>
-            </div>
-            <div class="portfolio-body">
-              <div class="card-header-flex">
-                <h3 class="card-title">Evaluation of Native Bacterial Biosorption for Lead (Pb) & Chromium (Cr) Removal from Nepalese Industrial Effluents</h3>
-                <span class="card-badge">KU & Asian Biotech Journal</span>
-              </div>
-              <p class="card-description">
-                Co-authored study evaluating microbial biosorption kinetics. Reached <strong>98.5% heavy metal clearance efficiency</strong> under optimized pH and temperature bio-reactor conditions.
-              </p>
-              <div class="tech-tags">
-                <span class="tech-chip">Biosorption</span>
-                <span class="tech-chip">AAS Analytics</span>
-                <span class="tech-chip">Kinetic Modeling</span>
-                <span class="tech-chip">Environmental Impact</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Paper 2 -->
-          <div class="portfolio-card tilt-card" data-category="biotech">
-            <div class="portfolio-img-wrapper">
-              <img src="assets/images/research_plot.png" alt="Lipid Extraction Profile" class="portfolio-img">
-              <span class="portfolio-overlay-badge">Conference Paper (2025)</span>
-            </div>
-            <div class="portfolio-body">
-              <div class="card-header-flex">
-                <h3 class="card-title">Microalgae (Chlorella vulgaris) Biomass & Lipid Yield Enhancement using Waste Organic Substrates</h3>
-                <span class="card-badge">Kathmandu University</span>
-              </div>
-              <p class="card-description">
-                Formulated low-cost microalgae growth medium using agricultural waste hydrolysates, increasing lipid productivity by 34.2% for sustainable bio-refinery applications.
-              </p>
-              <div class="tech-tags">
-                <span class="tech-chip">Microalgae</span>
-                <span class="tech-chip">Chlorella vulgaris</span>
-                <span class="tech-chip">Lipid Assay</span>
-                <span class="tech-chip">Circular Economy</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- TAB 4: GRANTS & PROJECTS -->
-      <div id="tab-grants" class="tab-panel">
-        <div class="section-header-banner">
-          <div class="section-title-group">
-            <div class="section-icon-box"><i class="fa-solid fa-microscope"></i></div>
-            <div>
-              <h2 class="section-title">Research Grants & Funded Projects</h2>
-              <p class="section-subtitle">Ongoing academic grants, institutional projects, and lab innovations</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="grid-2">
-          <div class="material-card tilt-card">
-            <div class="card-header-flex">
-              <div>
-                <h3 class="card-title">KU Innovation & Research Grant 2025</h3>
-                <p class="card-subtitle">Project Lead • Kathmandu University</p>
-              </div>
-              <span class="card-badge">Funded Grant</span>
-            </div>
-            <p class="card-description">
-              Awarded research funding for constructing a pilot-scale immobilized cell bioreactor for degrading textile azo dyes from river samples in Kavre district.
-            </p>
-            <div class="tech-tags">
-              <span class="tech-chip">Pilot Bioreactor</span>
-              <span class="tech-chip">Azo Dye Degradation</span>
-              <span class="tech-chip">Immobilized Cells</span>
-            </div>
-          </div>
-
-          <div class="material-card tilt-card">
-            <div class="card-header-flex">
-              <div>
-                <h3 class="card-title">Molecular Diagnostics for Plant Pathogens</h3>
-                <p class="card-subtitle">Collaborative Project • Department of Biotechnology</p>
-              </div>
-              <span class="card-badge">Active Project</span>
-            </div>
-            <p class="card-description">
-              Developing rapid PCR primer sets for detecting viral and bacterial wilt in high-altitude agricultural crops across Himalayan farming regions.
-            </p>
-            <div class="tech-tags">
-              <span class="tech-chip">Primer Design</span>
-              <span class="tech-chip">qPCR Assay</span>
-              <span class="tech-chip">Himalayan Crops</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- TAB 5: CONFERENCES & HONORS -->
-      <div id="tab-events" class="tab-panel">
-        <div class="section-header-banner">
-          <div class="section-title-group">
-            <div class="section-icon-box"><i class="fa-solid fa-award"></i></div>
-            <div>
-              <h2 class="section-title">Conferences, Keynotes & Honors</h2>
-              <p class="section-subtitle">Academic symposium presentations, poster awards, and delegate roles</p>
-            </div>
-          </div>
-
-          <button class="btn-gradient" id="open-upload-modal-btn">
-            <i class="fa-solid fa-plus"></i> Add Paper / Event
-          </button>
-        </div>
-
-        <div id="events-list-container" class="timeline">
-          <!-- Event 1 -->
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="material-card tilt-card">
-              <div class="card-header-flex">
-                <div>
-                  <h3 class="card-title">International Conference on Green Biotechnology & Life Sciences</h3>
-                  <p class="card-subtitle"><i class="fa-solid fa-location-dot"></i> Kathmandu University, Dhulikhel • 2025</p>
                 </div>
-                <span class="card-badge">Poster Presenter</span>
-              </div>
-              <p class="card-description">
-                Presented poster titled "Optimization of Biosorption Parameters for Heavy Metal Reclamation". Awarded Best Student Poster Presentation in Environmental Sciences section.
-              </p>
-              <div>
-                <h4 style="font-size: 0.85rem; color: var(--text-tertiary); margin-bottom: 8px;">Conference & Lab Photos:</h4>
-                <div class="event-photos-grid">
-                  <img src="assets/images/lab_research.jpg" alt="Biotech Lab Research" class="event-photo-thumb lightbox-trigger" data-full="assets/images/lab_research.jpg" data-caption="Kathmandu University Biotech Lab">
-                  <img src="assets/images/research_plot.png" alt="Biosorption Curve Plot" class="event-photo-thumb lightbox-trigger" data-full="assets/images/research_plot.png" data-caption="Biosorption Kinetic Profile">
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-date">
+                    Research
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- TAB 6: PHOTO GALLERY & FIELD NOTES -->
-      <div id="tab-gallery" class="tab-panel">
-        <div class="section-header-banner">
-          <div class="section-title-group">
-            <div class="section-icon-box"><i class="fa-solid fa-photo-film"></i></div>
-            <div>
-              <h2 class="section-title">Fieldwork & Laboratory Gallery</h2>
-              <p class="section-subtitle">Microscopy images, lab setups, field sampling, and conference moments</p>
-            </div>
-          </div>
-        </div>
+                <div class="timeline-content">
 
-        <div class="gallery-grid" id="full-gallery-grid">
-          <div class="gallery-card lightbox-trigger" data-full="assets/images/avatar.jpg" data-caption="Smarika Pokhrel - Biotechnology Research Portrait">
-            <img src="assets/images/avatar.jpg" alt="Smarika Pokhrel Portrait">
-            <div class="gallery-overlay">
-              <div class="gallery-title">Research Fellow Portrait</div>
-              <div class="gallery-sub">Kathmandu University Laboratory</div>
-            </div>
-          </div>
+                    <h3>Research Assistant</h3>
 
-          <div class="gallery-card lightbox-trigger" data-full="assets/images/lab_research.jpg" data-caption="Bioremediation Microalgae Culture Lab">
-            <img src="assets/images/lab_research.jpg" alt="Biotech Research Lab">
-            <div class="gallery-overlay">
-              <div class="gallery-title">Microalgae Bioreactor Setup</div>
-              <div class="gallery-sub">Photosynthetic Photobioreactor System</div>
-            </div>
-          </div>
+                    <h4>
+                        Kathmandu University
+                    </h4>
 
-          <div class="gallery-card lightbox-trigger" data-full="assets/images/research_plot.png" data-caption="Spectrophotometric Absorbance Curve Plot">
-            <img src="assets/images/research_plot.png" alt="Spectrophotometry Plot">
-            <div class="gallery-overlay">
-              <div class="gallery-title">AAS & UV-Vis Data Curves</div>
-              <div class="gallery-sub">Biosorption Spectrophotometry</div>
-            </div>
-          </div>
-        </div>
-      </div>
+                    <p>
+                        Working on laboratory and computational
+                        research projects involving biotechnology
+                        and bioinformatics.
+                    </p>
 
-      <!-- TAB 7: CONTACT -->
-      <div id="tab-contact" class="tab-panel">
-        <div class="section-header-banner">
-          <div class="section-title-group">
-            <div class="section-icon-box"><i class="fa-solid fa-paper-plane"></i></div>
-            <div>
-              <h2 class="section-title">Contact Smarika Pokhrel</h2>
-              <p class="section-subtitle">Reach out for academic collaborations, research inquiries, or conference invitations</p>
+                </div>
+
             </div>
-          </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-date">
+                    Future
+                </div>
+
+                <div class="timeline-content">
+
+                    <h3>Global Biotechnology & Innovation</h3>
+
+                    <h4>
+                        MSc • Industry • Entrepreneurship
+                    </h4>
+
+                    <p>
+                        Aspiring to connect advanced biotechnology
+                        research with industry and innovative
+                        health and skincare solutions.
+                    </p>
+
+                </div>
+
+            </div>
+
         </div>
 
-        <div class="grid-2">
-          <!-- Form -->
-          <div class="material-card tilt-card">
-            <h3 class="card-title" style="margin-bottom: 18px;"><i class="fa-solid fa-envelope-open-text" style="color: var(--accent-cyan); margin-right: 8px;"></i> Send an Academic Message</h3>
-            <form id="contact-form">
-              <div class="form-group" style="margin-bottom: 14px;">
-                <label class="form-label" for="contact-name">Your Full Name & Title</label>
-                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Prof. Sita Sharma" required>
-              </div>
+    </div>
 
-              <div class="form-group" style="margin-bottom: 14px;">
-                <label class="form-label" for="contact-email">Institutional Email Address</label>
-                <input type="email" id="contact-email" class="form-input" placeholder="name@university.edu" required>
-              </div>
+</section>
 
-              <div class="form-group" style="margin-bottom: 14px;">
-                <label class="form-label" for="contact-subject">Subject</label>
-                <input type="text" id="contact-subject" class="form-input" placeholder="Research Collaboration / Paper Query" required>
-              </div>
 
-              <div class="form-group" style="margin-bottom: 18px;">
-                <label class="form-label" for="contact-msg">Message</label>
-                <textarea id="contact-msg" class="form-textarea" rows="4" placeholder="Dear Smarika..." required></textarea>
-              </div>
+<!-- =========================
+     PUBLICATIONS
+========================= -->
 
-              <button type="submit" class="btn-gradient" style="width: 100%; justify-content: center;">
-                <i class="fa-solid fa-paper-plane"></i> Send Message
-              </button>
-            </form>
-          </div>
+<section class="publications" id="publications">
 
-          <!-- Contact Details -->
-          <div class="material-card tilt-card">
-            <h3 class="card-title" style="margin-bottom: 14px;"><i class="fa-solid fa-building-columns" style="color: var(--accent-emerald); margin-right: 8px;"></i> Academic Address & Office Hours</h3>
-            <p class="card-description">
-              Available for Biotechnology research, molecular assays, joint grant proposals, and academic peer reviews.
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Selected Work</h2>
+
+            <div class="section-line"></div>
+
+            <p>
+                Research projects, academic work and scientific interests
             </p>
 
-            <div style="display: flex; flex-direction: column; gap: 16px; margin-top: 16px;">
-              <div class="meta-chip" style="font-size: 0.95rem; padding: 10px 16px;">
-                <i class="fa-solid fa-globe"></i>
-                <span>Domain: <strong>smarikapokhrel.com.np</strong></span>
-              </div>
+        </div>
 
-              <div class="meta-chip" style="font-size: 0.95rem; padding: 10px 16px;">
-                <i class="fa-solid fa-envelope" style="color: var(--accent-pink);"></i>
-                <span>Email: <strong>smarikapokhrel3@gmail.com</strong></span>
-              </div>
 
-              <div class="meta-chip" style="font-size: 0.95rem; padding: 10px 16px;">
-                <i class="fa-solid fa-building-columns" style="color: var(--accent-purple);"></i>
-                <span>Office: <strong>Block 08, Department of Biotechnology, KU</strong></span>
-              </div>
+        <div class="publication">
 
-              <div class="meta-chip" style="font-size: 0.95rem; padding: 10px 16px;">
-                <i class="fa-solid fa-clock" style="color: var(--accent-amber);"></i>
-                <span>Office Hours: <strong>Mon - Fri (10:00 AM - 4:00 PM NPT)</strong></span>
-              </div>
-
-              <div class="meta-chip" style="font-size: 0.95rem; padding: 10px 16px;">
-                <i class="fa-solid fa-location-dot" style="color: var(--accent-cyan);"></i>
-                <span>Location: <strong>Dhulikhel, Kavre / Kathmandu, Nepal</strong></span>
-              </div>
+            <div class="publication-number">
+                PROJECT 01
             </div>
-          </div>
-        </div>
-      </div>
 
-    </main>
+            <h3>
+                Computer-Aided Drug Discovery
+            </h3>
 
-    <!-- FOOTER -->
-    <footer class="site-footer">
-      <div class="footer-flex">
-        <div>
-          © 2026 <strong>Smarika Pokhrel</strong> (smarikapokhrel.com.np) • Kathmandu University Biotechnology Research.
-        </div>
-        <div class="footer-links">
-          <a href="#" class="view-tab-link" data-tab="overview">Overview</a>
-          <a href="#" class="view-tab-link" data-tab="cv">CV</a>
-          <a href="#" class="view-tab-link" data-tab="portfolio">Publications</a>
-          <a href="#" class="view-tab-link" data-tab="events">Conferences</a>
-          <a href="#" id="footer-dns-link">Office Hours</a>
-        </div>
-      </div>
-    </footer>
+            <p>
+                Molecular docking analysis of bioactive compounds
+                against selected protein targets.
+            </p>
 
-  </div>
+            <a href="#">
+                View Project →
+            </a>
 
-  <!-- MODAL 1: Add New Paper / Project -->
-  <div class="modal-overlay" id="upload-modal">
-    <div class="modal-card">
-      <div class="modal-header">
-        <h3 class="modal-title"><i class="fa-solid fa-book-medical" style="color: var(--accent-cyan); margin-right: 8px;"></i> Add Paper / Research Event</h3>
-        <button class="btn-icon close-modal-btn"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-
-      <form id="event-upload-form">
-        <div class="form-group" style="margin-bottom: 12px;">
-          <label class="form-label" for="event-title">Paper Title / Conference Name</label>
-          <input type="text" id="event-title" class="form-input" placeholder="e.g. Molecular Assay of Microalgal Strains" required>
         </div>
 
-        <div class="form-group" style="margin-bottom: 12px;">
-          <label class="form-label" for="event-role">Author Role / Category</label>
-          <select id="event-role" class="form-select" required>
-            <option value="First Author" selected>First Author</option>
-            <option value="Co-Author">Co-Author</option>
-            <option value="Poster Presenter">Poster Presenter</option>
-            <option value="Keynote Speaker">Keynote Speaker</option>
-          </select>
+
+        <div class="publication">
+
+            <div class="publication-number">
+                PROJECT 02
+            </div>
+
+            <h3>
+                Natural Product Research
+            </h3>
+
+            <p>
+                Investigation of plant-derived metabolites and
+                their potential biological activities.
+            </p>
+
+            <a href="#">
+                View Project →
+            </a>
+
         </div>
 
-        <div class="form-group" style="margin-bottom: 12px;">
-          <label class="form-label" for="event-location">Journal / Institution & Date</label>
-          <input type="text" id="event-location" class="form-input" placeholder="e.g. Kathmandu University • Aug 2026" required>
+
+        <div class="publication">
+
+            <div class="publication-number">
+                PROJECT 03
+            </div>
+
+            <h3>
+                Bioinformatics & Molecular Analysis
+            </h3>
+
+            <p>
+                Sequence analysis, molecular modelling and
+                computational approaches to biological research.
+            </p>
+
+            <a href="#">
+                View Project →
+            </a>
+
         </div>
 
-        <div class="form-group" style="margin-bottom: 12px;">
-          <label class="form-label" for="event-description">Abstract / Description</label>
-          <textarea id="event-description" class="form-textarea" rows="3" placeholder="Abstract summary of key findings, methods..." required></textarea>
-        </div>
-
-        <div class="form-group" style="margin-bottom: 16px;">
-          <label class="form-label" for="event-photos">Upload Photos (Select one or multiple images)</label>
-          <input type="file" id="event-photos" class="form-input" accept="image/*" multiple>
-        </div>
-
-        <div style="display: flex; gap: 12px; justify-content: flex-end;">
-          <button type="button" class="btn-glass-pill close-modal-btn">Cancel</button>
-          <button type="submit" class="btn-gradient"><i class="fa-solid fa-cloud-arrow-up"></i> Save Paper & Photos</button>
-        </div>
-      </form>
     </div>
-  </div>
 
-  <!-- MODAL 2: Lightbox Viewer -->
-  <div class="modal-overlay" id="lightbox-modal">
-    <div class="lightbox-card">
-      <button class="btn-icon close-modal-btn" style="position: absolute; top: -50px; right: 0; color: #fff; background: rgba(255,255,255,0.2); border: none;"><i class="fa-solid fa-xmark"></i></button>
-      
-      <div class="lightbox-img-wrapper">
-        <button class="lightbox-nav prev" id="lightbox-prev"><i class="fa-solid fa-chevron-left"></i></button>
-        <img src="" alt="Enlarged View" id="lightbox-img" class="lightbox-img">
-        <button class="lightbox-nav next" id="lightbox-next"><i class="fa-solid fa-chevron-right"></i></button>
-      </div>
+</section>
 
-      <div id="lightbox-caption" class="lightbox-caption">Photo Details</div>
-    </div>
-  </div>
 
-  <!-- MODAL 3: Office Hours & DNS Guide Modal -->
-  <div class="modal-overlay" id="dns-modal">
-    <div class="modal-card" style="max-width: 650px;">
-      <div class="modal-header">
-        <h3 class="modal-title"><i class="fa-solid fa-building-columns" style="color: var(--accent-cyan); margin-right: 8px;"></i> Office Hours & Academic Contact</h3>
-        <button class="btn-icon close-modal-btn"><i class="fa-solid fa-xmark"></i></button>
-      </div>
+<!-- =========================
+     GALLERY
+========================= -->
 
-      <div class="dns-banner">
-        <i class="fa-solid fa-circle-check"></i>
-        <div>
-          <h4 style="color: var(--accent-emerald); margin-bottom: 4px;">Verified Researcher Domain: smarikapokhrel.com.np</h4>
-          <p style="font-size: 0.88rem; color: var(--text-secondary);">Department of Biotechnology, Kathmandu University, Dhulikhel, Kavre, Nepal.</p>
+<section class="gallery" id="gallery">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Gallery</h2>
+
+            <div class="section-line"></div>
+
+            <p>
+                A glimpse into my academic, research and personal journey
+            </p>
+
         </div>
-      </div>
 
-      <div style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 16px;">
-        <strong>Academic Schedule:</strong>
-        <div class="code-snippet">
-          Lab Office: Block 08 - Biotech Annex<br>
-          Office Hours: Mon - Fri (10:00 AM - 4:00 PM)
+
+        <div class="gallery-grid">
+
+
+            <!-- PHOTO 1 -->
+
+            <div class="gallery-item">
+
+                <img
+                    src="images/gallery1.jpg"
+                    alt="Laboratory research"
+                >
+
+                <div class="gallery-overlay">
+
+                    <h3>Laboratory Work</h3>
+
+                </div>
+
+            </div>
+
+
+            <!-- PHOTO 2 -->
+
+            <div class="gallery-item">
+
+                <img
+                    src="images/gallery2.jpg"
+                    alt="Research"
+                >
+
+                <div class="gallery-overlay">
+
+                    <h3>Research Journey</h3>
+
+                </div>
+
+            </div>
+
+
+            <!-- PHOTO 3 -->
+
+            <div class="gallery-item">
+
+                <img
+                    src="images/gallery3.jpg"
+                    alt="Academic event"
+                >
+
+                <div class="gallery-overlay">
+
+                    <h3>Academic Events</h3>
+
+                </div>
+
+            </div>
+
+
+            <!-- PHOTO 4 -->
+
+            <div class="gallery-item">
+
+                <img
+                    src="images/gallery4.jpg"
+                    alt="Conference"
+                >
+
+                <div class="gallery-overlay">
+
+                    <h3>Conferences</h3>
+
+                </div>
+
+            </div>
+
+
+            <!-- PHOTO 5 -->
+
+            <div class="gallery-item">
+
+                <img
+                    src="images/gallery5.jpg"
+                    alt="University life"
+                >
+
+                <div class="gallery-overlay">
+
+                    <h3>University Life</h3>
+
+                </div>
+
+            </div>
+
+
+            <!-- PHOTO 6 -->
+
+            <div class="gallery-item">
+
+                <img
+                    src="images/gallery6.jpg"
+                    alt="Biotechnology"
+                >
+
+                <div class="gallery-overlay">
+
+                    <h3>Biotechnology</h3>
+
+                </div>
+
+            </div>
+
         </div>
-      </div>
 
-      <div style="display: flex; justify-content: flex-end;">
-        <button class="btn-gradient close-modal-btn">Got It!</button>
-      </div>
     </div>
-  </div>
 
-  <!-- Toast Notification Container -->
-  <div class="toast-container" id="toast-container"></div>
+</section>
 
-  <!-- JavaScript App Logic -->
-  <script src="app.js"></script>
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="contact" id="contact">
+
+    <div class="container">
+
+        <h2>Let's Connect</h2>
+
+        <div class="section-line"></div>
+
+        <p>
+            Interested in biotechnology, research, collaboration
+            or innovation? I would love to connect.
+        </p>
+
+
+        <div class="contact-info">
+
+            <a href="mailto:your.email@gmail.com">
+                your.email@gmail.com
+            </a>
+
+            <a href="#">
+                LinkedIn
+            </a>
+
+        </div>
+
+
+        <div class="socials">
+
+            <a href="#">in</a>
+
+            <a href="#">G</a>
+
+            <a href="#">X</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    © 2026 Smarika Pokhrel · Biotechnology Researcher
+
+</footer>
+
+
 </body>
 </html>
+      
