@@ -439,21 +439,24 @@ nav {
 .contact-info a:nth-child(2) {
     display: inline-block;
     margin: 10px;
+
     color: #0A66C2;
-    font-weight: bold;
+    font-weight: 800;
     text-decoration: none;
 
-    /* White outline around the letters */
-    -webkit-text-stroke: 0.6px white;
+    /* Thin white outline */
+    -webkit-text-stroke: 0.7px #ffffff;
 
-    transition: 0.3s ease;
+    /* Bring letters closer together */
+    letter-spacing: -1.5px;
+
+    transition: all 0.3s ease;
 }
 
 .contact-info a:nth-child(2):hover {
-    color: white;
-    -webkit-text-stroke: 0.6px #0A66C2;
+    color: #0859A8;
+    -webkit-text-stroke: 0.7px #ffffff;
 }
-
 
 /* Social media buttons */
 .socials {
