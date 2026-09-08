@@ -435,8 +435,28 @@ nav {
     color: #d9b78c;
 }
 
+/* LinkedIn */
+.contact-info a:nth-child(2) {
+    display: inline-block;
+    padding: 5px 14px;
+    color: #0A66C2;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.contact-info a:nth-child(2):hover {
+    background: #0A66C2;
+    color: white;
+    border-color: #0A66C2;
+}
+
+
+/* Social media buttons */
 .socials {
-    margin-top: 30px;
+    margin-top: 25px;
     display: flex;
     justify-content: center;
     gap: 15px;
@@ -445,22 +465,44 @@ nav {
 .socials a {
     width: auto;
     height: auto;
-    padding: 8px 18px;
-    border: 1px solid #777;
+    padding: 9px 20px;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #ffffff;
+    color: white;
+    font-weight: bold;
     text-decoration: none;
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.socials a:hover {
-    background: #d9b78c;
-    color: #222;
+
+/* Instagram */
+.socials a:first-child {
+    background: #E1306C;
+    border: 1px solid #E1306C;
 }
 
+
+/* Facebook */
+.socials a:last-child {
+    background: #1877F2;
+    border: 1px solid #1877F2;
+}
+
+
+/* Instagram hover */
+.socials a:first-child:hover {
+    background: #C13584;
+    transform: translateY(-2px);
+}
+
+
+/* Facebook hover */
+.socials a:last-child:hover {
+    background: #0D65D9;
+    transform: translateY(-2px);
+}
 /* =========================
    FOOTER
 ========================= */
